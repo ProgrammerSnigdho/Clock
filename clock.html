@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
-        let a;
+        let app;
         let date;
         let time;
         const options = {
@@ -18,13 +18,13 @@
         setInterval(() => {
 
 
-            a = new Date
-            date = a.toLocaleDateString(undefined, options)
-            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            app = new Date
+            date = app.toLocaleDateString(undefined, options)
+            time = app.getHours() + ':' + app.getMinutes() + ':' + app.getSeconds();
             document.getElementById('time').innerHTML = time + "<br> On " + date;
         }, 1000);
     </script>
-    <title>Clock</title>
+    <title>Clock Web Version</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
